@@ -21,7 +21,7 @@ public class CashTellerTransaction {
     private String tranRefNo;
 
     @Column(name = "Tran_Code")
-    private int tranCode;
+    private Long tranCode;
 
 
     @Column(name = "Tran_Type", length = 128, nullable = false)

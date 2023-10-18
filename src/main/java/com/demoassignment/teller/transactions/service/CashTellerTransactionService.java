@@ -93,4 +93,16 @@ public class CashTellerTransactionService {
         cashTellerTransactionRepository.save(cashTellerTransaction1);
         return "Cash Teller Successfully Update";
     }
+
+    public CashTellerTransaction getTransactionByTranCode(Long tranCode) {
+       return cashTellerTransactionRepository.findByTranCode(tranCode);
+    }
+
+   /* public List<CashTellerTransaction> getCashTellerTransactionByStartDate(Date createdDate) {
+        return cashTellerTransactionRepository.findAllByCreatedDate(createdDate);
+    }*/
+
+    public List<CashTellerTransaction> getTransactionBetweenDates(Date startDate, Date endDate) {
+        return cashTellerTransactionRepository.findTransactionsBetweenDates(startDate, endDate);
+    }
 }

@@ -14,7 +14,7 @@ import java.util.Date;
 public class CashTellerTransactionRequest {
 
     private String tranRefNo;
-    private int tranCode;
+    private Long tranCode;
     private String tranType;
     private BigDecimal amount;
     private Long sourceAccount;

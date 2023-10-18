@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class CashTellerUpdateRequest {
     private String tranRefNo;
-    private int tranCode;
+    private Long tranCode;
     private String tranType;
     private BigDecimal amount;
     private Long sourceAccount;
